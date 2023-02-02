@@ -1,0 +1,18 @@
+{% extends 'base_extend.html' %}
+{% block content %}
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<form method = "POST" enctype = "multipart/form-data">
+  <div style="text-align:center" calss = "form-group">
+    {% csrf_token %}
+    <label> Upload Images</label>
+    <input type = "file" name ="file">
+    <button class="bbtn btn-primary mb-2" type="submit">Submit</button>
+  </div>
+</form>
+
+{% endblock %}
